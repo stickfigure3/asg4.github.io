@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CodebuddyPersistentProjectState">
+    <option name="promptHistory">
+      <list>
+        <option value="my dog is staying in normals on when it gets turned off but isn't going back to the default when normlas is turned off, make it so that the dog gets normals truned off when the button is pressed" />
+        <option value="the head and other parts of it still don't go back to normal, fix that oo" />
+      </list>
+    </option>
+    <option name="selectedModel" value="codebuddy:CLAUDE_3.5_SONNET_V7" />
+    <option name="ttsEnabled" value="false" />
+  </component>
+</project>

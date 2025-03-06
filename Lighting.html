@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Asg4 Akash Malampati</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			width: 100%;
+			text-align: center;
+		}
+		#container {
+			display: flex;
+			margin-top: 20px;
+		}
+		#webgl {
+			border: 2px solid #333;
+		}
+		#controls {
+			margin-left: 20px;
+			padding: 15px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			max-width: 300px;
+		}
+		fieldset {
+			margin-bottom: 15px;
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+		fieldset legend {
+			font-weight: bold;
+		}
+		label {
+			display: inline-block;
+			margin-bottom: 5px;
+		}
+		input[type="range"] {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		button {
+			padding: 5px 10px;
+			margin-top: 5px;
+			cursor: pointer;
+		}
+		#numdot {
+			font-weight: bold;
+			text-align: center;
+		}
+	</style>
+</head>
+<body onload="main()">
+<header>
+	<h1>Asg4 Akash Malampati</h1>
+	<h3>My animals hard to find but it is there </h3>
+</header>
+<div id="container">
+	<canvas id="webgl" width="800" height="800"></canvas>
+
+	<div id="controls">
+		<p id="numdot">ms: - fps: -</p>
+		<fieldset>
+			<legend>Light Settings</legend>
+			<label for="LightX">LightX</label>
+			<input type="range" id="LightX" min="-250" max="250" step="1" value="0"/>
+			<label for="LightY">LightY</label>
+			<input type="range" id="LightY" min="-250" max="250" step="1" value="100"/>
+			<label for="LightZ">LightZ</label>
+			<input type="range" id="LightZ" min="-250" max="250" step="1" value="-200"/>
+			<button id="LightToggle">Toggle Light Animation</button>
+		</fieldset>
+		<fieldset>
+			<legend>Normals</legend>
+			<button id="normalsOn">Normals On</button>
+			<button id="normalsOff">Normals Off</button>
+		</fieldset>
+		<fieldset>
+			<legend>Light Color</legend>
+			<label for="Red">Red</label>
+			<input type="range" id="Red" min="0" max="1" step="0.01" value="1"/>
+			<label for="Green">Green</label>
+			<input type="range" id="Green" min="0" max="1" step="0.01" value="1"/>
+			<label for="Blue">Blue</label>
+			<input type="range" id="Blue" min="0" max="1" step="0.01" value="1"/>
+		</fieldset>
+		<fieldset>
+			<legend>Spotlight Controls</legend>
+			<button id="SpotlightToggle">Toggle Spotlight</button>
+			<button id="MainLightToggle">Toggle All Lighting</button>
+			<label for="SpotX">Spotlight Rotation X</label>
+			<input type="range" id="SpotX" min="-180" max="180" step="1" value="0"/>
+			<label for="SpotY">Spotlight Rotation Y</label>
+			<input type="range" id="SpotY" min="-180" max="180" step="1" value="0"/>
+		</fieldset>
+		<fieldset>
+			<legend>Controls</legend>
+			<p>W, A, S, D, Space, Shift</p>
+			<p>Mouse: Look around</p>
+			<p>Q, E: Pan camera</p>
+		</fieldset>
+	</div>
+</div>
+
+<script src="lib/webgl-utils.js"></script>
+<script src="lib/webgl-debug.js"></script>
+<script src="lib/cuon-utils.js"></script>
+<script src="lib/cuon-matrix.js"></script>
+<script src="Shaders.js"></script>
+<script src="webGLsetup.js"></script>
+<script src="textures.js"></script>
+<script src="Circle.js"></script>
+<script src="Cube.js"></script>
+<script src="Sphere.js"></script>
+<script src="Dog.js"></script>
+<script src="Camera.js"></script>
+<script src="OBJView.js"></script>
+<script src="World.js"></script>
+<script src="Asg4.js"></script>
+</body>
+</html>
